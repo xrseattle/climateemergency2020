@@ -17,7 +17,7 @@
 }
 
 #main_content {
-    padding: 0em 2em 0em;
+    padding: 1.5em 3.2em 1em;
 }
 
 body {
@@ -29,7 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 28px
+    font-size: 28px;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
 }
 
 .panel {
@@ -40,9 +46,9 @@ h1 {
     padding: 0.3em;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
-    color: rgb(196, 174, 99);
+    color: rgb(156, 130, 45);
 }
 
 a:hover, a:active {
@@ -51,6 +57,12 @@ a:hover, a:active {
 
 li {
     margin: 0.1em 0em 0.1em;
+}
+
+#can-form-area-climate-emergency-2020-contact input[type=submit] {
+    background-color: rgba(225, 215, 28, 0.9);
+    color: #000;
+    padding: 10px;
 }
 
 .about_box {
