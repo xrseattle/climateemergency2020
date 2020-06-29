@@ -17,7 +17,7 @@
 }
 
 #main_content {
-    padding: 1.5em 3.2em 1em;
+    padding: 1.75em 4em 1em;
 }
 
 body {
@@ -44,6 +44,7 @@ hr {
 
 .section {
     padding: 0.3em;
+    margin-bottom: 0.5em;
 }
 
 a:link, a:visited {
@@ -59,16 +60,10 @@ li {
     margin: 0.1em 0em 0.1em;
 }
 
-#can-form-area-climate-emergency-2020-contact input[type=submit] {
-    background-color: rgba(225, 215, 28, 0.9);
-    color: #000;
-    padding: 10px;
-}
-
-.about_box {
+.about-box {
     background-color: rgba(225, 215, 28, 0.9);
     padding: 0.6em 1em 0.6em;
-    margin: 1em 0em 1em;
+    margin-bottom: 1.5em;
     border-radius: 0.3em;
 }
 
@@ -76,3 +71,37 @@ li {
     padding-bottom: 0.5em;
     margin-top: 0em;
 }
+
+
+/* Styling specifically for the Action Network dynamically inserted form. */
+#can-form-area-climate-emergency-2020-contact input[type=submit] {
+    background-color: rgba(225, 215, 28, 0.9);
+    color: #000;
+    padding: 15px 12px 13px;
+}
+
+#can-form-area-climate-emergency-2020-contact input[type=text],
+#can-form-area-climate-emergency-2020-contact input[type=email]{
+    border: 2px solid #ccc;
+    transition: 0.75s;
+    outline: none;
+    padding: 24px 0px 24px 7px;
+}
+
+#can-form-area-climate-emergency-2020-contact input[type=text]:focus,
+#can-form-area-climate-emergency-2020-contact input[type=email]:focus {
+    border: 2px solid rgb(225, 215, 50);
+    padding: 24px 0px 24px 7px;
+} 
+
+#can-form-area-climate-emergency-2020-contact #can_embed_form_inner h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
