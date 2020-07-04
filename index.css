@@ -1,4 +1,4 @@
-.panel#static {
+#static {
     position: fixed;
     left: 0;
     top: 0;
@@ -6,18 +6,18 @@
     overflow: hidden;
 }
 
-.panel#dynamic {
+#scrolling {
     height: 100%;
     margin-left: 50%;
 }
 
-.panel#static #anchor_img {
+#anchor_img {
     width: 100%;
     height: auto;
 }
 
-.panel#dynamic #main_content {
-    padding: 15px 35px 15px;
+#main_content {
+    padding: 1.75em 4em 1em;
 }
 
 body {
@@ -28,35 +28,80 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+hr {
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
 .panel {
     width: 50%;
 }
 
 .section {
-    margin: 30px 0px 30px;
-    padding: 5px;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
 }
 
-a:link {
+a:link, a:visited {
     text-decoration: none;
-    color: rgb(196, 174, 99);
+    color: rgb(156, 130, 45);
 }
 
 a:hover, a:active {
     text-decoration: underline;
 }
 
-ul li {
-    margin: 2px 0px 2px;
+li {
+    margin: 0.1em 0em 0.1em;
 }
 
-.about_box {
+.about-box {
     background-color: rgba(225, 215, 28, 0.9);
-    padding: 10px 15px 10px;
-    margin: 15px 0px 15px;
-    border-radius: 5px;
+    padding: 0.6em 1em 0.6em;
+    margin-bottom: 1.5em;
+    border-radius: 0.3em;
 }
 
 #call-to-action {
-    padding: 10px 0px 10px;
+    padding-bottom: 0.5em;
+    margin-top: 0em;
 }
+
+
+/* Styling specifically for the Action Network dynamically inserted form. */
+#can-form-area-climate-emergency-2020-contact input[type=submit] {
+    background-color: rgba(225, 215, 28, 0.9);
+    color: #000;
+    padding: 15px 12px 13px;
+}
+
+#can-form-area-climate-emergency-2020-contact input[type=text],
+#can-form-area-climate-emergency-2020-contact input[type=email]{
+    border: 2px solid #ccc;
+    transition: 0.75s;
+    outline: none;
+    padding: 24px 0px 24px 7px;
+}
+
+#can-form-area-climate-emergency-2020-contact input[type=text]:focus,
+#can-form-area-climate-emergency-2020-contact input[type=email]:focus {
+    border: 2px solid rgb(225, 215, 50);
+    padding: 24px 0px 24px 7px;
+} 
+
+#can-form-area-climate-emergency-2020-contact #can_embed_form_inner h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+	margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
